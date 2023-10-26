@@ -13,6 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weekday_Or_Weekend", "class
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nth Fibonacci", "assignments\Nth Fibonacci\Nth Fibonacci.csproj", "{24C452C1-1BBB-486A-9393-0ACBB65DEBB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number Printer", "classroom\Number Printer\Number Printer.csproj", "{F18EA27D-8035-40B6-8743-B44FCDDCE173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Even Number Finder", "classroom\Even Number Finder\Even Number Finder.csproj", "{674741CD-E692-4225-B508-E38E0EBC1B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplication Table Generator", "classroom\Multiplication Table Generator\Multiplication Table Generator.csproj", "{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +45,18 @@ Global
 		{24C452C1-1BBB-486A-9393-0ACBB65DEBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24C452C1-1BBB-486A-9393-0ACBB65DEBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24C452C1-1BBB-486A-9393-0ACBB65DEBB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18EA27D-8035-40B6-8743-B44FCDDCE173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18EA27D-8035-40B6-8743-B44FCDDCE173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18EA27D-8035-40B6-8743-B44FCDDCE173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18EA27D-8035-40B6-8743-B44FCDDCE173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674741CD-E692-4225-B508-E38E0EBC1B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674741CD-E692-4225-B508-E38E0EBC1B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674741CD-E692-4225-B508-E38E0EBC1B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674741CD-E692-4225-B508-E38E0EBC1B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
