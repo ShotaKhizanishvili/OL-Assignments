@@ -13,11 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weekday_Or_Weekend", "class
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nth Fibonacci", "assignments\Nth Fibonacci\Nth Fibonacci.csproj", "{24C452C1-1BBB-486A-9393-0ACBB65DEBB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number Printer", "classroom\Number Printer\Number Printer.csproj", "{F18EA27D-8035-40B6-8743-B44FCDDCE173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Number Printer", "classroom\Number Printer\Number Printer.csproj", "{F18EA27D-8035-40B6-8743-B44FCDDCE173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Even Number Finder", "classroom\Even Number Finder\Even Number Finder.csproj", "{674741CD-E692-4225-B508-E38E0EBC1B34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Even Number Finder", "classroom\Even Number Finder\Even Number Finder.csproj", "{674741CD-E692-4225-B508-E38E0EBC1B34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplication Table Generator", "classroom\Multiplication Table Generator\Multiplication Table Generator.csproj", "{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assignments", "assignments", "{A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "classroom", "classroom", "{24302147-5A58-450F-91D6-C12DC10241D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Search", "assignments\Binary Search\Binary Search.csproj", "{D8629C5F-E0A2-4431-9FD2-37D479482AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vowel or not", "assignments\Vowel or not\Vowel or not.csproj", "{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,13 +59,28 @@ Global
 		{674741CD-E692-4225-B508-E38E0EBC1B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{674741CD-E692-4225-B508-E38E0EBC1B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{674741CD-E692-4225-B508-E38E0EBC1B34}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA640C7C-80D0-40B3-BAA5-7B8EC873B9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8629C5F-E0A2-4431-9FD2-37D479482AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8629C5F-E0A2-4431-9FD2-37D479482AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8629C5F-E0A2-4431-9FD2-37D479482AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8629C5F-E0A2-4431-9FD2-37D479482AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4C53ADA-2144-4C45-8D80-E1604C27ED1D} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
+		{6AB81A7C-7529-4071-95F8-6985919C2180} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{1BDC251C-5688-4E27-807B-E91316838A01} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{DD8B451F-5283-4737-8E71-F5C12BD6AE85} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{24C452C1-1BBB-486A-9393-0ACBB65DEBB2} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
+		{F18EA27D-8035-40B6-8743-B44FCDDCE173} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{674741CD-E692-4225-B508-E38E0EBC1B34} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{D8629C5F-E0A2-4431-9FD2-37D479482AA6} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
+		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
