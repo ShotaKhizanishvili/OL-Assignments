@@ -21,9 +21,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assignments", "assignments"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "classroom", "classroom", "{24302147-5A58-450F-91D6-C12DC10241D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary Search", "assignments\Binary Search\Binary Search.csproj", "{D8629C5F-E0A2-4431-9FD2-37D479482AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binary Search", "assignments\Binary Search\Binary Search.csproj", "{D8629C5F-E0A2-4431-9FD2-37D479482AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vowel or not", "assignments\Vowel or not\Vowel or not.csproj", "{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vowel or not", "assignments\Vowel or not\Vowel or not.csproj", "{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Discount Calculator", "classroom\Discount Calculator\Discount Calculator.csproj", "{97987F2B-EAB6-4749-BF59-D7AC0CDE0983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day Planner", "classroom\Day Planner\Day Planner.csproj", "{7D3696CA-B1F8-4D7E-9044-65277A7421A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiplication Table Generator", "classroom\Multiplication Table Generator\Multiplication Table Generator.csproj", "{85B4D59C-BE23-4B04-884A-E823E45961C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +73,18 @@ Global
 		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97987F2B-EAB6-4749-BF59-D7AC0CDE0983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97987F2B-EAB6-4749-BF59-D7AC0CDE0983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97987F2B-EAB6-4749-BF59-D7AC0CDE0983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97987F2B-EAB6-4749-BF59-D7AC0CDE0983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3696CA-B1F8-4D7E-9044-65277A7421A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3696CA-B1F8-4D7E-9044-65277A7421A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3696CA-B1F8-4D7E-9044-65277A7421A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3696CA-B1F8-4D7E-9044-65277A7421A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B4D59C-BE23-4B04-884A-E823E45961C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B4D59C-BE23-4B04-884A-E823E45961C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B4D59C-BE23-4B04-884A-E823E45961C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B4D59C-BE23-4B04-884A-E823E45961C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +99,9 @@ Global
 		{674741CD-E692-4225-B508-E38E0EBC1B34} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{D8629C5F-E0A2-4431-9FD2-37D479482AA6} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
 		{FB1D1A9D-247E-467C-AE8E-DA54AF588E00} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
+		{97987F2B-EAB6-4749-BF59-D7AC0CDE0983} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{7D3696CA-B1F8-4D7E-9044-65277A7421A5} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{85B4D59C-BE23-4B04-884A-E823E45961C2} = {24302147-5A58-450F-91D6-C12DC10241D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
