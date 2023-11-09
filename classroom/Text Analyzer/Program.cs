@@ -8,28 +8,66 @@ namespace Text_Analyzer
         {
             string input;
             Console.WriteLine("Please enter a block of text for analysis:");
-            input = Console.ReadLine().ToLower();
-            string[] inputStrings = input.Split(',');
-            for (int i = 0; i < inputStrings.Length; i++)
+            input = Console.ReadLine();
+            Console.WriteLine("Analyzing...");
+            CountWords(input);
+            FindMostCommonWord(input);
+            FindLongestWord(input);
+        }
+
+        public static void CountWords(string input)
+        {
+            Regex wordRegex = new Regex(@"\b\w+\b");
+            var matches = wordRegex.Matches(input);
+            Console.WriteLine($"Word Count: {matches.Count}");
+        }
+
+        public static void FindMostCommonWord(string input)
+        {
+            Regex wordRegex = new Regex(@"\b\w+\b");
+            MatchCollection matches = wordRegex.Matches(input);
+            Dictionary<string, int> wordCounts = new Dictionary<string, int>();
+            
+            foreach (Match match in matches)
             {
-                inputStrings[i] = inputStrings[i].Trim();
+                string word = match.Value.ToLower();
+                if (wordCounts.ContainsKey(word))
+                {
+                    wordCounts[word]++;
+                }
+                else
+                {
+                    wordCounts[word] = 1;
+                }
             }
+            string mostCommonWord = "";
+            int maxCount = 0;
+            foreach (var entry in wordCounts)
+            {
+                if (entry.Value > maxCount)
+                {
+                    mostCommonWord = entry.Key;
+                    maxCount = entry.Value;
+                }
+            }
+            Console.WriteLine($"Most Common Word: '{mostCommonWord}'");
         }
-        public static void CountWords(string[] arr)
-        {
 
-        }
-        public static void FindMostCommonWord()
+        public static void FindLongestWord(string input)
         {
-
-        }
-        public static void FindLongestWord()
-        {
-
-        }
-        private static void arrayCleaner(string[] arr)
-        {
-
+            Regex wordRegex = new Regex(@"\b\w+\b");
+            MatchCollection matches = wordRegex.Matches(input);
+            
+            string longestWord = "";
+            foreach (Match match in matches)
+            {
+                string word = match.Value;
+                if (word.Length > longestWord.Length)
+                {
+                    longestWord = word;
+                }
+            }
+            Console.WriteLine($"Longest Word: '{longestWord}'");
         }
     }
 }

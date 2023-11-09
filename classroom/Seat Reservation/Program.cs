@@ -2,60 +2,93 @@
 {
     internal class Program
     {
-        private static char[,] seats = new char[4, 4] {
-            { '0','0','0','0' },
-            { '0','0','0','0' },
-            { '0','0','0','0' },
-            { '0','0','0','0' }
+        private static readonly char[,] Seats = new char[4, 4]
+        {
+            { '0', '0', '0', '0' },
+            { '0', '0', '0', '0' },
+            { '0', '0', '0', '0' },
+            { '0', '0', '0', '0' }
         };
+
         static void Main(string[] args)
         {
-            int choice;
-
-            Console.WriteLine("Initial Seating Chart:");
-            DisplaySeats();
-
-            Console.WriteLine("Select an option: ");
-            Console.WriteLine("1) Reserve a seat");
-            Console.WriteLine("2)View available seats");
-            choice = Convert.ToInt32(Console.ReadLine());
-            switch (choice) 
+            do
             {
-                case 1:break;
-                case 2:break;
-                default:break;
-            }
-        }
-        public static void DisplaySeats()
-        {
-            for (int i = 0; i < seats.GetLength(0); i++)
-            {
-                for (int k = 0; k < seats.GetLength(1); k++)
+                Console.WriteLine("Initial Seating Chart:");
+                DisplaySeats();
+
+                Console.WriteLine("Select an option: ");
+                Console.WriteLine("1) Reserve a seat");
+                Console.WriteLine("2) View available seats");
+                var choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
                 {
-                    Console.Write(seats[i, k]);
+                    case 1:
+                        Console.WriteLine($"Your choice: {choice}");
+                        ReserveSeat();
+                        break;
+                    case 2:
+                        Console.WriteLine($"Your choice: {choice}");
+                        AvailableSeats();
+                        break;
+                    default:
+                        Console.WriteLine("Wrong option, choose from (1,2).");
+                        break;
                 }
+            } while (ContinuePrompt());
+        }
+
+        private static void DisplaySeats()
+        {
+            for (int i = 0; i < Seats.GetLength(0); i++)
+            {
+                for (int k = 0; k < Seats.GetLength(1); k++)
+                {
+                    Console.Write(Seats[i, k]);
+                }
+
                 Console.WriteLine();
             }
         }
-        public static void ReserveSeat()
+
+        private static void ReserveSeat()
         {
-            int index1, index2;
             Console.Write("Enter the row number: ");
-            index1 = Convert.ToInt32(Console.ReadLine());
+            var index1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the column number: ");
-            index2 = Convert.ToInt32(Console.ReadLine());
-            if (index1 >= seats.GetLength(0) || index2 >= seats.GetLength(1))
+            var index2 = Convert.ToInt32(Console.ReadLine());
+            if (index1 >= Seats.GetLength(0) || index2 >= Seats.GetLength(1))
             {
                 Console.WriteLine("You entered wrong seats, try again.");
+                return;
+            }
+            if (Seats[index1, index2] == 'X')
+            {
+                Console.WriteLine("That seat is already reserved, try again.");
+                return;
             }
 
-            seats[index1, index2] = 'X';
+            Seats[index1, index2] = 'X';
+            Console.WriteLine("Seat reserved.");
             Console.WriteLine("Updated Seating Chart: ");
             DisplaySeats();
         }
-        public static void AvailableSeats()
+
+        private static void AvailableSeats()
         {
             DisplaySeats();
+        }
+
+        private static bool ContinuePrompt()
+        {
+            Console.WriteLine("Do you want to continue? (Yes,No)");
+            var choice = Console.ReadLine();
+            if (choice == "Yes")
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
