@@ -57,13 +57,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Animal Hierarchy", "classro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleCalculator_WithTests", "SimpleCalculator_WithTests", "{78DF7AFD-2934-49F8-ACA1-6AB5AEA77FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "classroom\SimpleCalculator\SimpleCalculator.csproj", "{C5236508-7D2D-4237-8BD9-A2FC5F84974C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator", "classroom\SimpleCalculator\SimpleCalculator.csproj", "{C5236508-7D2D-4237-8BD9-A2FC5F84974C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.Tests", "classroom\SimpleCalculator.Tests\SimpleCalculator.Tests.csproj", "{88F9B019-01D9-462D-939C-EDFA4A057FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalculator.Tests", "classroom\SimpleCalculator.Tests\SimpleCalculator.Tests.csproj", "{88F9B019-01D9-462D-939C-EDFA4A057FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse Management System", "assignments\Warehouse Management System\Warehouse Management System.csproj", "{24E00A5A-5E0C-4E7B-846E-26FB010B9D24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse Management System", "assignments\Warehouse Management System\Warehouse Management System.csproj", "{24E00A5A-5E0C-4E7B-846E-26FB010B9D24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burger Builder", "assignments\Burger Builder\Burger Builder.csproj", "{49A68F9F-682D-4CB8-AFAF-61630DCF9F23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Burger Builder", "assignments\Burger Builder\Burger Builder.csproj", "{49A68F9F-682D-4CB8-AFAF-61630DCF9F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event-Driven Temperature Monitor", "classroom\Event-Driven Temperature Monitor\Event-Driven Temperature Monitor.csproj", "{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{49A68F9F-682D-4CB8-AFAF-61630DCF9F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49A68F9F-682D-4CB8-AFAF-61630DCF9F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49A68F9F-682D-4CB8-AFAF-61630DCF9F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,6 +223,7 @@ Global
 		{88F9B019-01D9-462D-939C-EDFA4A057FE2} = {78DF7AFD-2934-49F8-ACA1-6AB5AEA77FC4}
 		{24E00A5A-5E0C-4E7B-846E-26FB010B9D24} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
 		{49A68F9F-682D-4CB8-AFAF-61630DCF9F23} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
+		{742DA0A6-060B-43BD-8D1E-CC25D3EDB543} = {24302147-5A58-450F-91D6-C12DC10241D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
