@@ -39,9 +39,7 @@ static void DeleteDirectory(string directoryPath)
         Directory.Delete(directoryPath);
         Console.WriteLine($"Deleting directory: {directoryPath}... Done.");
     }
-    
 }
-
 
 static void ListAllDirectoryContents(string directoryPath)
 {
