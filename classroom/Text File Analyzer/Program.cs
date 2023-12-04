@@ -1,13 +1,28 @@
-﻿Console.Write("Please enter the path to the text file you wish to analyze: ");
-var path = Console.ReadLine();
-var text = File.ReadAllText(path);
-var textArr = ParseText(text);
+﻿do
+{
+    Console.Write("Please enter the path to the text file you wish to analyze: ");
+    var path = Console.ReadLine();
+    var text = File.ReadAllText(path);
+    var textArr = ParseText(text);
 
-Console.WriteLine($"Word Count: {CountWords(textArr)}");
-Console.WriteLine($"Longest Word: {FindLongestWord(textArr)}");
-Console.WriteLine($"Shortest Word: {FindShortestWord(textArr)}");
-Console.WriteLine($"Average Word Length: {AverageWordLength(textArr)} characters");
-Console.WriteLine($"Most Frequent Word: {MostFrequentWord(textArr, out int count)} appeared {count} times");
+    Console.WriteLine($"Word Count: {CountWords(textArr)}");
+    Console.WriteLine($"Longest Word: {FindLongestWord(textArr)}");
+    Console.WriteLine($"Shortest Word: {FindShortestWord(textArr)}");
+    Console.WriteLine($"Average Word Length: {AverageWordLength(textArr)} characters");
+    Console.WriteLine($"Most Frequent Word: {MostFrequentWord(textArr, out int count)} appeared {count} times");
+} while (Prompt());
+
+static bool Prompt()
+{
+    Console.WriteLine("Would you like to analyze another file? (yes/no): ");
+    var answer = Console.ReadLine();
+    if (answer == "yes")
+    {
+        return true;
+    }
+
+    return false;
+}
 
 static string MostFrequentWord(string[] textArr, out int count)
 {
