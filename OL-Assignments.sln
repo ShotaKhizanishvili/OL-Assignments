@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact List", "classroom\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task Tracker", "classroom\Task Tracker\Task Tracker.csproj", "{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extended String Manipulation", "classroom\Extended String Manipulation\Extended String Manipulation.csproj", "{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,6 +286,7 @@ Global
 		{EAD6DE62-BEFB-48C7-B81D-9EC4AE8DAC92} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{65DF06C6-F44B-4C04-9174-4842C7AC4E16} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2} = {24302147-5A58-450F-91D6-C12DC10241D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
