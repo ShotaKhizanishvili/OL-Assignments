@@ -65,25 +65,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse Management System
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Burger Builder", "assignments\Burger Builder\Burger Builder.csproj", "{49A68F9F-682D-4CB8-AFAF-61630DCF9F23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event-Driven Temperature Monitor", "classroom\Event-Driven Temperature Monitor\Event-Driven Temperature Monitor.csproj", "{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event-Driven Temperature Monitor", "classroom\Event-Driven Temperature Monitor\Event-Driven Temperature Monitor.csproj", "{742DA0A6-060B-43BD-8D1E-CC25D3EDB543}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather Adviser", "classroom\Weather Adviser\Weather Adviser.csproj", "{3FCA5574-301F-4F70-BC9C-461F414AFA6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather Adviser", "classroom\Weather Adviser\Weather Adviser.csproj", "{3FCA5574-301F-4F70-BC9C-461F414AFA6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced Calculator", "classroom\Advanced Calculator\Advanced Calculator.csproj", "{0426089E-DD25-4C38-88D5-35A1135A3006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advanced Calculator", "classroom\Advanced Calculator\Advanced Calculator.csproj", "{0426089E-DD25-4C38-88D5-35A1135A3006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML Tag Remover", "classroom\HTML Tag Remover\HTML Tag Remover.csproj", "{A28D3B21-5D84-4CEE-95BA-7AC033046A24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTML Tag Remover", "classroom\HTML Tag Remover\HTML Tag Remover.csproj", "{A28D3B21-5D84-4CEE-95BA-7AC033046A24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape Hierarchy", "classroom\Shape Hierarchy\Shape Hierarchy.csproj", "{37ADB2E9-6813-4359-B357-FF03D18A6D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape Hierarchy", "classroom\Shape Hierarchy\Shape Hierarchy.csproj", "{37ADB2E9-6813-4359-B357-FF03D18A6D80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text File Analyzer", "classroom\Text File Analyzer\Text File Analyzer.csproj", "{C40460B8-08CC-45FF-9FA4-D722DE1ED9AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Text File Analyzer", "classroom\Text File Analyzer\Text File Analyzer.csproj", "{C40460B8-08CC-45FF-9FA4-D722DE1ED9AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory Explorer", "classroom\Directory Explorer\Directory Explorer.csproj", "{EAD6DE62-BEFB-48C7-B81D-9EC4AE8DAC92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Directory Explorer", "classroom\Directory Explorer\Directory Explorer.csproj", "{EAD6DE62-BEFB-48C7-B81D-9EC4AE8DAC92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact List", "classroom\Contact List\Contact List.csproj", "{65DF06C6-F44B-4C04-9174-4842C7AC4E16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact List", "classroom\Contact List\Contact List.csproj", "{65DF06C6-F44B-4C04-9174-4842C7AC4E16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task Tracker", "classroom\Task Tracker\Task Tracker.csproj", "{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task Tracker", "classroom\Task Tracker\Task Tracker.csproj", "{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extended String Manipulation", "classroom\Extended String Manipulation\Extended String Manipulation.csproj", "{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extended String Manipulation", "classroom\Extended String Manipulation\Extended String Manipulation.csproj", "{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library System (Clean Code)", "classroom\Library System (Clean Code)\Library System (Clean Code).csproj", "{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +245,10 @@ Global
 		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -287,6 +293,7 @@ Global
 		{65DF06C6-F44B-4C04-9174-4842C7AC4E16} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{D4961C16-66FE-4B13-8D9B-1B79B6A8EF1B} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{DA40DC77-E36A-4D32-B768-018F5C2FA4BB} = {24302147-5A58-450F-91D6-C12DC10241D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
