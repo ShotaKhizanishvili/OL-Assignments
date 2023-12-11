@@ -2,91 +2,84 @@
 
 public class BurgerBuilder : IBurgerBuilder
 {
-    private CustomBurger _customBurger = new CustomBurger();
-    private PremadeBurgers _premadeBurgers = new PremadeBurgers(); 
+    private Burger _burger = new Burger();
 
     public BurgerBuilder()
     {
-        this.Reset();
+        Reset();
     }
 
     private void Reset()
     {
-        this._customBurger = new CustomBurger();
+        _burger = new Burger();
     }
 
-    public void AskForCheese()
+    public void AddCheese()
     {
-        Console.WriteLine("Do you want melted cheese? (Yes,No)");
-        var choice = Console.ReadLine();
-        if (choice == "Yes")
-        {
-            this._customBurger.Add("melted cheese");
-        }
+        _burger.Add("melted cheese");
     }
 
-    public void AskForPickles()
+    public void AddPickles()
     {
-        Console.WriteLine("Do you want pickles? (Yes,No)");
-        var choice = Console.ReadLine();
-        if (choice == "Yes")
-        {
-            this._customBurger.Add("pickles");
-        }
+        _burger.Add("pickles");
     }
 
-    public void AskForMeatType()
+    public void AddMeat(string choice)
     {
-        Console.WriteLine("Which type of meat do you want? (Chicken, Beef, Neither)");
-        var choice = Console.ReadLine();
         switch (choice)
         {
             case "Chicken":
-                this._customBurger.Add($"{choice.ToLower()} meat");
+                _burger.Add($"{choice.ToLower()} meat");
                 break;
             case "Beef":
-                this._customBurger.Add(choice.ToLower());
+                _burger.Add(choice.ToLower());
                 break;
             case "Neither":
-                this._customBurger.Add("without meat");
+                _burger.Add("without meat");
                 break;
         }
     }
 
-    public void AskForSauce()
+    public void AddSauce(string choice)
     {
-        Console.WriteLine("Which type of sauce do you want? (Hot, Sweet, Signature, Neither)");
-        var choice = Console.ReadLine();
         switch (choice)
         {
             case "Hot":
-                this._customBurger.Add($"{choice.ToLower()} sauce");
+                _burger.Add($"{choice.ToLower()} sauce");
                 break;
             case "Sweet":
-                this._customBurger.Add($"{choice.ToLower()} sauce");
+                _burger.Add($"{choice.ToLower()} sauce");
                 break;
             case "Signature":
-                this._customBurger.Add($"{choice.ToLower()} sauce");
+                _burger.Add($"{choice.ToLower()} sauce");
                 break;
             case "Neither":
-                this._customBurger.Add("no sauce");
+                _burger.Add("no sauce");
                 break;
         }
     }
 
-    public void AskForPremadeBurgers()
+    public void GetPremadeBurger(string choice)
     {
-        Console.WriteLine("Which type of pre-made burger do you want?(Cheeseburger, Hamburger, Signature burger)");
-        var choice = Console.ReadLine();
-        _premadeBurgers.premadeBurgers.TryGetValue(choice, out var burger);
-        burger.ListParts();
+        switch (choice)
+        {
+            case "Cheeseburger":
+                _burger.GetCheeseBurger();
+                break;
+            case "Hamburger":
+                _burger.GetHamburger();
+                break;
+            case "Signature burger":
+                _burger.GetSignatureBurger();
+                break;
+        }
     }
 
-    public CustomBurger GetBurger()
+    public Burger GetBurger()
     {
-        var result = this._customBurger;
+        var result = _burger;
 
-        this.Reset();
+        Reset();
 
         return result;
     }

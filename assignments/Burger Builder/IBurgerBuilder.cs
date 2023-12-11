@@ -2,9 +2,9 @@
 
 public interface IBurgerBuilder
 {
-    void AskForCheese();
-    void AskForPickles();
-    void AskForMeatType();
-    void AskForSauce();
-    void AskForPremadeBurgers();
+    void AddCheese();
+    void AddPickles();
+    void AddMeat(string choice);
+    void AddSauce(string choice);
+    void GetPremadeBurger(string choice);
 }
