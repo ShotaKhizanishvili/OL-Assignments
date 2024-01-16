@@ -85,9 +85,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task Tracker", "classroom\T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extended String Manipulation", "classroom\Extended String Manipulation\Extended String Manipulation.csproj", "{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library System (Clean Code)", "classroom\Library System (Clean Code)\Library System (Clean Code).csproj", "{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library System (Clean Code)", "classroom\Library System (Clean Code)\Library System (Clean Code).csproj", "{DA40DC77-E36A-4D32-B768-018F5C2FA4BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concurrent File Processing", "classroom\Concurrent File Processing\Concurrent File Processing.csproj", "{98919A95-A4D5-4213-9FAA-76AFB25C2503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Concurrent File Processing", "classroom\Concurrent File Processing\Concurrent File Processing.csproj", "{98919A95-A4D5-4213-9FAA-76AFB25C2503}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory Management System", "classroom\Inventory Management System\Inventory Management System.csproj", "{D69160A0-DDC1-4F8E-95BB-A4382C515B59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +257,10 @@ Global
 		{98919A95-A4D5-4213-9FAA-76AFB25C2503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98919A95-A4D5-4213-9FAA-76AFB25C2503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98919A95-A4D5-4213-9FAA-76AFB25C2503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69160A0-DDC1-4F8E-95BB-A4382C515B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69160A0-DDC1-4F8E-95BB-A4382C515B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69160A0-DDC1-4F8E-95BB-A4382C515B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69160A0-DDC1-4F8E-95BB-A4382C515B59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -301,6 +307,7 @@ Global
 		{003B7B3B-8D91-43EF-9AE3-02B0A73A2BC2} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{DA40DC77-E36A-4D32-B768-018F5C2FA4BB} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{98919A95-A4D5-4213-9FAA-76AFB25C2503} = {24302147-5A58-450F-91D6-C12DC10241D7}
+		{D69160A0-DDC1-4F8E-95BB-A4382C515B59} = {24302147-5A58-450F-91D6-C12DC10241D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
