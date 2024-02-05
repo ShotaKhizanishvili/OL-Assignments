@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Auth_Api.Auth;
+using Auth_Api.Auth.Db;
+using Auth_Api.Auth.Db.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
-using static ToDo_Auth.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ...
 
 // Token-ის შემქმნელი
 var issuer = "myapp.com";
@@ -17,14 +18,7 @@ var issuer = "myapp.com";
 var audience = "myapp.com";
 
 // Token-ის გასაღები
-var secretKey = "secretKeyasdjaldkajdlaasdadasdasdnsadnadan";
-
-builder.Services.Configure<JwtSettings>(s =>
-{
-    s.Issuer = issuer;
-    s.Audience = audience;
-    s.SecrectKey = secretKey;
-});
+var secretKey = builder.Configuration["JwtTokenSecretKey"]!;
 
 // Token-ის ვალიდაციის პარამეტრები, რის მიხედვითაც asp.net მოახდენს ვალიდაციას
 var tokenValidationParameters = new TokenValidationParameters
@@ -32,25 +26,40 @@ var tokenValidationParameters = new TokenValidationParameters
     ValidateIssuer = true,
     ValidateAudience = true,
     ValidateLifetime = true,
-    ValidateIssuerSigningKey = true,
+    ValidateIssuerSigningKey = false,
     ValidIssuer = issuer,
     ValidAudience = audience,
     ClockSkew = TimeSpan.Zero,
     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
 };
 
+builder.Services.AddTransient<JwtTokenGenerator>();
+
 // საჭირო სერვისების IoC-ში რეგისტრაცია
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => { options.TokenValidationParameters = tokenValidationParameters; });
 
-builder.Services.AddDbContext<AppDbContext>(c => c.UseSqlServer(builder.Configuration["AppDbContextConnection"]));
+builder.Services
+    .AddDbContext<AppDbContext>(c => c.UseSqlServer(builder.Configuration["AppDbContextConnection"]));
+
 
 // Policy-ს შექმნა და კონტეინერში დამატება
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("MyApiUserPolicy",
-        policy => policy.RequireClaim(ClaimTypes.Role, "api-user"));
+    options.AddPolicy("UserPolicy",
+        policy =>
+        {
+            policy.RequireClaim(ClaimTypes.Role, "api-user");
+        }
+    );
+
+    options.AddPolicy("AdminPolicy",
+        policy =>
+        {
+            policy.RequireClaim(ClaimTypes.Role, "api-admin");
+        }
+    );
 });
 
 // UserEntity და RoleEntity კლასების მიხედვით მოხდება ბაზაში ცხრილების შექმნა
@@ -66,12 +75,16 @@ builder.Services
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 
+
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -81,9 +94,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-app.UseAuthentication();
 
 app.MapControllers();
 

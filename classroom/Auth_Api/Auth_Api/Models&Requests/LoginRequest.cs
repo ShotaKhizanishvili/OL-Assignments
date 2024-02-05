@@ -1,4 +1,4 @@
-﻿namespace ToDo_Auth
+﻿namespace Auth_Api.Models_Requests
 {
     public class LoginRequest
     {
