@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Football data reader", "ass
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension functions", "assignments\Extension functions\Extension functions.csproj", "{F2AD8D4B-C67F-404A-90EC-C32E31CAB8C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary Api", "assignments\BookLibrary Api\BookLibrary Api.csproj", "{A2783CD2-61AB-43C0-91EE-C42AAD165D99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -309,6 +311,10 @@ Global
 		{F2AD8D4B-C67F-404A-90EC-C32E31CAB8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2AD8D4B-C67F-404A-90EC-C32E31CAB8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2AD8D4B-C67F-404A-90EC-C32E31CAB8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2783CD2-61AB-43C0-91EE-C42AAD165D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2783CD2-61AB-43C0-91EE-C42AAD165D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2783CD2-61AB-43C0-91EE-C42AAD165D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2783CD2-61AB-43C0-91EE-C42AAD165D99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -363,6 +369,7 @@ Global
 		{21F48F6A-4675-4272-9B52-27671762172A} = {24302147-5A58-450F-91D6-C12DC10241D7}
 		{F9275053-33E4-4A14-9493-9C2008D0C022} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
 		{F2AD8D4B-C67F-404A-90EC-C32E31CAB8C3} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
+		{A2783CD2-61AB-43C0-91EE-C42AAD165D99} = {A5DFFB73-D4D6-41EE-8A54-02C57DBEE43C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D120D228-82DE-483C-98CC-3FD80FCD7914}
