@@ -4,11 +4,18 @@ go
 use Inventory;
 go
 
+create table Categories(
+	Id int identity(1,1) primary key,
+	Name nvarchar(100) not null,
+	Description nvarchar(max) not null
+);
+
 create table Products(
 	Id int identity(1,1) primary key,
 	Name nvarchar(100) not null,
 	Price decimal not null,
-	Stock int not null
+	Stock int not null,
+	CategoryId int foreign key references Categories(Id)
 );
 
 create table Sales(
@@ -18,12 +25,3 @@ create table Sales(
 	SaleDate date not null,
 	foreign key (ProductId) references Products(Id)
 );
-
-create table Categories(
-	Id int identity(1,1) primary key,
-	Name nvarchar(100) not null,
-	Description nvarchar(max) not null
-);
-
-alter table Products
-add CategoryId int unique foreign key references Categories(Id);
